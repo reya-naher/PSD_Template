@@ -2,24 +2,157 @@
   padding: 0;
   margin: 0;
 }
-body{
-  background-color: #e07e1b;;
+/* fonts */
+.textDiv h2,.learning h1,.numberDiv p ,.yellowNum,.university h1{
+  font-family: 'Montserrat', sans-serif;
 }
+header, .textDiv p,.deptText p, .learning p{
+  font-family: 'Work Sans', sans-serif;
+}
+.deptText h1,.card-title{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+}
+/* colors */
+.applyBtnClr,.textDiv h2{
+  color:#FFC178;
+}
+.navbar-toggler,.visitBtn{
+  background-color: #FFC178;
+}
+.nav-link,.textDiv p,.deptText p,.card-link{
+  color:#879399;
+}
+
+/* navbar */
 .navbar-brand{
   margin-left: 8rem;
 }
-.header{
+.nav-link:hover{
+  color:#FFC178;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.applyBtn{
+  border-radius: 25px;
+  background-color: white;
+}
+
+/* header */
+header{
   background-color: #FFF9F3;
   height: 400px;
 }
+.coverImage{
+  position:absolute;
+}
+
 .textDiv{
   position: absolute;
-  top: 100px;
+  top: 0px;
   left: 150px;
 }
-@media (min-width: 992px){
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 2rem;
-    padding-left: 2rem;
+.visitBtn{
+  padding: 10px 25px;
+  border-radius: 25px;
+  border:none;
+  color:white;
 }
+@media (min-width: 992px){
+  .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 2rem;
+      padding-left: 2rem;
+  }
+  }
+@media (max-width: 640px){
+.navbar-collapse {
+    padding: 0 80px;
+  }
+h2{
+  font-size: 2rem;
+}
+
+.textDiv{
+  left:100px;
+}
+  }
+/* department */
+.deptText{
+  margin-top: 280px;
+  height: 100px;
+  width: 510px;
+}
+.orangeCard{
+  background-color: #F9703A;
+}
+.greenCard{
+  background-color: #80BE41;
+}
+.yellowCard{
+  background-color: #FFB157;
+}
+/* learning */
+.yellowDiv{
+  color:#FFBA00;
+}
+.yellowNum,.pinkNum,.greenNum{
+  font-size: 40px;
+}
+.pinkDiv{
+  color:#FF5F72;
+}
+.greenDiv{
+  color: #43CB83;
+}
+/* university */
+.university{
+  margin: 120px 0px;
+  background-image: url(images1/BG@1X.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.uniCard{
+  height: 350px;
+  margin: 10px 10px;
+}
+.uniCard-title{
+  color:#282F3D;
+}
+.uniCard-title:hover{
+  color:#FFC178;
+  text-decoration: underline;
+}
+.card-link:hover{
+  color:#282F3D;
+}
+@media (max-width: 640px){
+  .uniCard{
+    margin: 10px auto;
+  }
+  
+}
+/* Footer */
+Footer{
+  background-color: #252C3A;
+  padding: 40px 0px;
+  color:#707276;
+}
+Footer h5{
+  color:white;
+}
+.input-group-text{
+  background-color: #FFC178;
+  color:white;
+}
+.socialList-item{
+  display: inline;
+}
+.social-icon{
+  color: gray;
+}
+.social-icon:hover{
+text-decoration: none;
+}
+.footerList-item{
+  list-style: none;
 }

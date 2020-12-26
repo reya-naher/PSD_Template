@@ -1,67 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EDUMODO</title>
-   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   <!--custom css-->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!---font awesome-->
+  <script src="https://kit.fontawesome.com/325a65a78d.js" crossorigin="anonymous"></script>
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <!--custom css-->
   <link rel="stylesheet" href="style1.css">
 </head>
+
 <body>
   <!--Navbar-->
-  <div class="container-fluid header">
-
-    <div>
-
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#"> 
-        <img src="images1/Composed-layer@1X.png" height="80px"  alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <header>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img 
+          src="images1/Composed-layer@1X.png" 
+          height="80px" 
+          alt="">
+        </a>
+        <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#navbarNav"
+        aria-controls="navbarNav" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Study <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Admission </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pages </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">News </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact </a>
-          </li>
-          <li class="nav-item">
-            <a class="btn" href="#" role="button">Apply Now</a>
-          </li>
-        </ul>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Study</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Admission </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact </a>
+            </li>
+            <li class="nav-item applyBtn">
+              <a class="btn applyBtnClr" href="#" role="button">Apply Now</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!---cover image-->
+      <div class="coverImage">
+        <img 
+        src="images1/updated.png" 
+        alt="" 
+        height="560px" 
+        width="100%">
+        <div class="textDiv">
+          <h2>Innovation for education <br /> and society </h2>
+          <p> Our interdisciplinary majors and minors mean you can <br /> chart your own course for academic success
+          </p>
+          <button class="visitBtn">Visit Our Campus</button>
+        </div>
       </div>
-    </nav>
-    <!---cover image-->    
-      <img src="images1/updated.png" alt="" height="560px" width="100%">    
-      <div class="textDiv">
-        <h1>Innovation for education <br/> and society </h1>
-        <h5> Our interdisciplinary majors and minors mean you can <br/> chart your own course for academic success </h5>
-        <button>Visit Our Campus</button>
-      </div>
-  </div>
-</div>
 
+    </div>
+  </header>
+  <!---department-->
+  <div class="container">
+    <div class="deptText text-center mx-auto mb-5">
+      <h1> Our Department </h1>
+      <p>A hundred thousand grateful loves to your dear papa and mamma.Is your poor brother recovered of his rack-punch? Oh, dear! Oh,dear! How men should beware of wicked punch! </p>
+    </div>
+
+    <div class="card-deck text-center text-white">
+      <div class="card orangeCard">
+        <img 
+        src="images1/Vector Smart Object@1X.png" 
+        class="card-img-top" 
+        height="310px" 
+        alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Online Education</h5>
+        </div>
+      </div>
+
+      <div class="card greenCard">
+        <img 
+        src="images1/Vector Smart Object@1X (1).png" 
+        class="card-img-top" 
+        height="310px" 
+        alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Online Education</h5>
+        </div>
+      </div>
+
+      <div class="card yellowCard">
+        <img 
+        src="images1/Vector Smart Object1@1X.png" 
+        class="card-img-top" 
+        height="310px" 
+        alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Online Education</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--learning-->
+  <div class="container-fluid learning">
+    <div class="row">
+
+      <div class="col-md-6">
+        <img 
+        src="images1/learning.png" 
+        alt="" 
+        height="600px" 
+        width="100%">
+      </div>
+
+      <div class="col-md-6 mt-5 px-5">
+        <h1>Limitless learning, more <br /> possibilities</h1>
+        <p>
+          The University of Rochester is one of the country's top-tier research Universities. Our campuses are home to
+          200 academic majors, more than 2000 faculty and instructional staff, and some 10,000 students - approximately
+          half of whom are women.
+        </p>
+        <p>
+          Learning at the University of Rochester is also on a very personal scale. Rochester remains one of the
+          smallest and most collegiate among top research Universities, with smaller classes , a low 10:1 student to
+          teacher ratio, and increased interactions with faculty
+        </p>
+
+        <div class="numberDiv d-flex align-items-center">
+          <div class="ml-5 yellowDiv">
+            <b class="yellowNum">4000</b>
+            <p>Students</p>
+          </div>
+          <div class="ml-5 pinkDiv">
+            <b class="pinkNum">260</b>
+            <p>Courses</p>
+          </div>
+          <div class="ml-5 greenDiv">
+            <b class="greenNum">5679</b>
+            <p>Hours Video</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--university-->
+  <div class="university">
+    <h1 class="text-center pb-5">Around the University</h1>
+    <div class="container">
+      <div class="row">
+
+        <div class="card uniCard" style="width: 16rem;">
+          <img 
+          src="images1/Layer 547@1X.png" 
+          class="card-img-top" 
+          alt="...">
+          <div class="card-body">
+            <h6 class="card-title uniCard-title">Photoshop CC 2018 Essential: The Basics </h6>
+            <p class="card-subtitle mb-3 text-muted">
+              Graphics Design
+            </p>
+            <p class="mt-5">
+              <a href="#" class="card-link">
+              Keep reading
+            </a>
+          </p>
+          </div>
+        </div>
+
+        <div class="card uniCard" style="width: 16rem;">
+          <img 
+          src="images1/Layer 548@1X.png" 
+          class="card-img-top" 
+          alt="...">
+          <div class="card-body">
+            <h6 class="card-title uniCard-title"> 
+            Get started coding Android apps with kotlin
+          </h6>
+            <p class="card-subtitle mb-3 text-muted">
+              Global Systems
+            </p>
+            <p class="mt-5">
+              <a href="#" class="card-link">
+              Keep reading
+            </a></p>
+          </div>
+        </div>
+
+        <div class="card uniCard" style="width: 16rem;">
+          <img 
+          src="images1/Layer 549@1X.png" 
+          class="card-img-top" 
+          alt="...">
+          <div class="card-body">
+            <h6 class="card-title uniCard-title">
+              Create Turntable Animation with Cinema 4D 
+            </h6>
+            <p class="card-subtitle mb-2 text-muted">
+              Computer & Information 
+            </p>
+            <p class="mt-5">
+              <a href="#" class="card-link">
+              Keep reading
+              </a></p>
+          </div>
+        </div>
+
+        <div class="card uniCard" style="width: 16rem;">
+          <img 
+          src="images1/Layer 550@1X.png" 
+          class="card-img-top" 
+          alt="...">
+          <div class="card-body">
+            <h6 class="card-title uniCard-title">
+              A Beginner’s Guide to the New Bootstrap 4 Grid 
+            </h6>
+            <p class="card-subtitle mb-3 text-muted">
+              Web Development
+            </h6>
+            <p class="mt-5">
+              <a href="#" class="card-link">
+                Keep reading
+              </a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="card uniCard" style="width: 16rem;">
+          <img 
+          src="images1/Layer 551@1X.png" 
+          class="card-img-top" 
+          alt="...">
+          <div class="card-body">
+            <h6 class="card-title uniCard-title">
+              A Designer’s Guide to Vue.js Components 
+            </h6>
+            <p class="card-subtitle mb-3 text-muted">
+              Art Departments
+            </p>
+            <p class="mt-5">
+              <a href="#" class="card-link">
+                Keep reading
+              </a></p>
+          </div>
+        </div>
+
+        <div class="card uniCard" style="width: 16rem;">
+          <img 
+          src="images1/Layer 552@1X.png" 
+          class="card-img-top" 
+          alt="...">
+          <div class="card-body">
+            <h6 class="card-title uniCard-title">
+              Code a Swift App With Realm Mobile Database 
+            </h6>
+            <p class="card-subtitle mb-3 text-muted">
+              Music
+            </p>
+            <p class="mt-5">
+              <a href="#" class="card-link">
+                Keep reading
+              </a></p>
+          </div>
+        </div>
+
+        <div class="card uniCard" style="width: 16rem;">
+          <img 
+          src="images1/Layer 553@1X.png"
+          class="card-img-top" 
+          alt="...">
+          <div class="card-body">
+            <h6 class="card-title uniCard-title">
+              10 Essential Design Tips in Adobe Illustrator 
+            </h6>
+            <p class="card-subtitle mb-3 text-muted">
+              Technology Information
+            </p>
+            <p class="mt-5">
+            <a href="#" class="card-link">
+              Keep reading
+            </a></p>
+          </div>
+        </div>
+
+        <div class="card uniCard" style="width: 16rem;">
+          <img 
+          src="images1/Layer 554@1X.png" 
+          class="card-img-top" 
+          alt="...">
+          <div class="card-body">
+            <h6 class="card-title uniCard-title">
+              Modern PHP From The Beginning 
+            </h6>
+            <p class="card-subtitle mb-2 text-muted">
+              Data Science
+            </p>
+            <p class="mt-5">
+              <a href="#" class="card-link">
+                Keep reading
+              </a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <!--Footer-->
+  <Footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3">
+          <img 
+          src="images1/Composed-layer@1X (1).png" 
+          height="20px" 
+          alt="...">
+          <p class="footerText mt-2">
+            Edumodo focuses on creating magnificent education websites with ease. Take the lead in the race with
+            Learned.
+          </p>
+          <hr />
+          <ul class="socialList">
+            <li class="socialList-item">
+              <a href="#" class="social-icon pl-2">
+                <i class="fab fa-twitter fa-xs"></i>
+              </a>
+            </li>
+            <li class="socialList-item">
+              <a href="#" class="social-icon pl-2">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="socialList-item">
+              <a href="#" class="social-icon pl-2">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li class="socialList-item">
+              <a href="#" class="social-icon pl-2">
+                <i class="fab fa-skype"></i>
+              </a>
+            </li>
+            <li class="socialList-item">
+              <a href="#" class="social-icon pl-2">
+                <i class="fab fa-pinterest-square"></i>
+              </a>
+            </li>
+            <li class="socialList-item">
+              <a href="#" class="social-icon pl-2">
+                <i class="fab fa-apple"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <ul class="footerList">
+            <h5 class="mb-3"> FEATURED PROGRAMS </h5>
+            <li class="footerList-item my-2">
+              Fixed responsive issue - Just Now 
+            </li>
+            <li class="footerList-item my-2">
+              New portfolio grid layout - Today 
+            </li>
+            <li class="footerList-item my-2">
+              Tested & approved WP 3.6 - 5 Hours Ago 
+            </li>
+            <li class="footerList-item my-2">
+              Fixed google map issue - yesterday 
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <ul class="footerList">
+            <h5 class="mb-3"> LEARNING </h5>
+            <li class="footerList-item my-2"> 
+              Our Plans 
+            </li>
+            <li class="footerList-item my-2"> 
+              Free Trial 
+            </li>
+            <li class="footerList-item my-2"> 
+              Academic Solutions 
+            </li>
+            <li class="footerList-item my-2"> 
+              Business Solutions 
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5>SUPPORT FORUM</h5>
+          <P> Write your email into below field and join our quick support forum.
+          </P>
+          <div class="input-group mb-3 p-3">
+            <input 
+            type="text" 
+            class="form-control" 
+            placeholder="Email address" 
+            aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span 
+              class="input-group-text" 
+              id="basic-addon2">
+              GET HELP
+            </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+  </Footer>
   <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
