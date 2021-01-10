@@ -1,12 +1,35 @@
-*{
-  padding: 0;
+/*
+0px to 600px:       PHONE
+600px to 900:       Tablet Potrait
+900px to 1200px:    Tablet Landscape
+1200 to 1800px:     Normal
+1800px +:           Big Desktop
+$breakpoint
+-phone
+-tabport
+-tabland
+-bigdesktop
+1em = 16px
+*/
+*,
+*::after,
+*::before {
   margin: 0;
+  padding: 0;
 }
 /* fonts */
+@media only screen and (max-width: 40em) {
+  h1 {
+    font-size: 2em; 
+  }
+  h5 {
+    font-size: 2.50em; 
+  } 
+}
 .textDiv h2,.learning h1,.numberDiv p ,.yellowNum,.university h1{
   font-family: 'Montserrat', sans-serif;
 }
-header, .textDiv p,.deptText p, .learning p{
+.coverImage, .textDiv p,.deptText p, .learning p{
   font-family: 'Work Sans', sans-serif;
 }
 .deptText h1,.card-title{
@@ -23,10 +46,41 @@ header, .textDiv p,.deptText p, .learning p{
 .nav-link,.textDiv p,.deptText p,.card-link{
   color:#879399;
 }
-
+/* body */
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%; 
+  } 
+}
+@media only screen and (max-width: 40em) {
+  html {
+    font-size: 75%; 
+  } 
+}
+@media only screen and (max-width: 40em) {
+  body {
+    overflow-x: hidden; 
+  }
+}
+@media only screen and (max-width: 45em) {
+  body {
+    overflow-x: hidden; 
+  }
+}
 /* navbar */
+.nav-item{
+  margin-right: 5px;
+}
+.navbar-light{
+  background-color: #FFF9F3;
+}
 .navbar-brand{
-  margin-left: 8rem;
+  margin-left: 80px;
+}
+@media only screen and (max-width: 45em) {
+  .navbar-brand{
+    margin-left: 0rem;
+  }
 }
 .nav-link:hover{
   text-decoration: underline;
@@ -40,19 +94,10 @@ header, .textDiv p,.deptText p, .learning p{
   background-color: white;
 }
 
-/* header */
-header{
-  background-color: #FFF9F3;
-  height: 400px;
-}
-.coverImage{
-  position:absolute;
-}
-
 .textDiv{
   position: absolute;
-  top: 0px;
-  left: 150px;
+  top: 150px;
+  left: 220px;
 }
 .visitBtn{
   padding: 10px 25px;
@@ -66,13 +111,10 @@ header{
       padding-left: 2rem;
   }
   }
-@media (max-width: 640px){
+@media (max-width: 40em){
 .navbar-collapse {
     padding: 0 80px;
   }
-h2{
-  font-size: 2rem;
-}
 
 .textDiv{
   left:100px;
@@ -80,10 +122,36 @@ h2{
   }
 /* department */
 .deptText{
-  margin-top: 280px;
   height: 100px;
   width: 510px;
 }
+@media only screen and (max-width: 56.25em) {
+  .deptText{
+    height: 100px;
+    width: 210px;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .deptText{
+    margin-top: 50px;
+    height: 100px;
+    width: 210px;
+  }
+}
+@media only screen and (max-width: 45em) {
+  .deptText{
+    margin-top: 80px;
+    height: 100px;
+    width: 280px;
+  }
+}
+/* @media only screen and (max-width: 75em) {
+  .deptText{
+    margin-top: 55rem;
+    height: 100px;
+    width: 280px;
+  }
+} */
 .orangeCard{
   background-color: #F9703A;
 }
@@ -93,12 +161,23 @@ h2{
 .yellowCard{
   background-color: #FFB157;
 }
+@media only screen and (max-width: 40em) {
+  .orangeCard,.greenCard,.yellowCard{
+    width: 20rem;
+    margin: 0 auto;
+  }
+}
 /* learning */
 .yellowDiv{
   color:#FFBA00;
 }
 .yellowNum,.pinkNum,.greenNum{
   font-size: 40px;
+}
+@media only screen and (max-width: 40em) {
+  .yellowNum,.pinkNum,.greenNum{
+    font-size: 30px;
+  }
 }
 .pinkDiv{
   color:#FF5F72;
@@ -113,9 +192,11 @@ h2{
   background-position: right;
   background-repeat: no-repeat;
 }
-.uniCard{
-  height: 350px;
-  margin: 10px auto;
+@media only screen and (max-width: 40em) {
+  .uniCard{
+    width: 20rem;
+    margin: 0 auto;
+  }
 }
 .uniCard-title{
   color:#282F3D;
@@ -127,12 +208,7 @@ h2{
 .card-link:hover{
   color:#282F3D;
 }
-@media (max-width: 640px){
-  .uniCard{
-    margin: 10px auto;
-  }
-  
-}
+
 /* Footer */
 Footer{
   background-color: #252C3A;
